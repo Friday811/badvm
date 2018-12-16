@@ -1,0 +1,31 @@
+110A [ 0] load 10 into r1
+1201 [ 1] load 1 into r2
+1F00 [ 2] load 0 into r15
+1E00 [ 3] load 0 into r14
+3012 [ 4] subtract r1 - r2 into r0
+A00C [ 5] jump to @C if r1 = r2
+3002 [ 6] subtract r0 - r2 into r0
+2DE0 [ 7] add r14 + r0 into r13
+6F00 [ 8] push r15 onto the stack
+6D00 [ 9] push r13 onto the stack
+D001 [ A] print the stack as int
+9006 [ B] jump to @6 if r0 > 0
+1A12 [ C] load 12 into r10
+EA00 [ D] print string starting at r10
+C300 [ E] read from fifo into r3
+5300 [ F] change ins @00 to r3 value
+B000 [10] unconditional jump to @00
+F000 [11] halt
+0068 [12] h
+0065 [13] e
+006c [14] l
+006c [15] l
+006f [16] o
+0020 [17] _
+0077 [18] w
+006f [19] o
+0072 [1A] r
+006c [1B] l
+0064 [1C] d
+0021 [1D] !
+0000 [1E] null
